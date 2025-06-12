@@ -158,6 +158,9 @@ from agents.run import RunConfig
 # Load environment variables
 load_dotenv()
 
+port = int(os.environ.get("PORT", 8000))  # fallback to 8000 for local dev
+
+
 gemini_api_key = os.getenv("GEMINI_API_KEY")
 if not gemini_api_key:
     raise ValueError("GEMINI_API_KEY environment variable is not set.")
