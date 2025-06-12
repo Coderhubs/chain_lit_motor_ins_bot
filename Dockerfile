@@ -13,8 +13,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the app
 COPY . .
 
-# Expose the port Chainlit runs on (default 8000)
-EXPOSE 8000
+# Expose the port provided by Render
+ENV PORT=10000
+EXPOSE ${PORT}
 
-# Start Chainlit app
-CMD ["chainlit", "run", "main.py", "--port", "8000"]
+# Start Chainlit app on the correct port
+CMD ["sh", "-c", "chainlit run main.py --port $PORT"]
