@@ -3,7 +3,8 @@ __pycache__/
 *.py[cod]
 
 # Environment variables
-.env
+.env*
+!.env.example
 
 # Virtual environments
 env/
@@ -19,10 +20,9 @@ venv/
 # Chainlit cache
 chainlit_cache/
 
-# macOS files
+# macOS system files
 .DS_Store
 
+# Data folder
 data/*
 !data/*.csv
-# Do NOT ignore your CSV data folder!
-# So do NOT add `data/` here
