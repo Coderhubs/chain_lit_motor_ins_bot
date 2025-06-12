@@ -1,0 +1,8 @@
+Vehicle Type,Gross (AED),Net (AED)
+1 & 2 Ton Pickup,620.00,574
+VAN,635.00,590
+3 Ton Pickup,690.00,640
+Recovery Pickup up to 3 Ton,725.00,685
+Recovery Pickup above 3 Ton,760.00,715
+Pickup & Truck above 3 Ton,780.00,735
+git push origin main --force

@@ -1,0 +1,28 @@
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Logs
+*.log
+
+# VS Code settings
+.vscode/
+
+# Chainlit cache
+chainlit_cache/
+
+# macOS files
+.DS_Store
+
+data/*
+!data/*.csv
+# Do NOT ignore your CSV data folder!
+# So do NOT add `data/` here
